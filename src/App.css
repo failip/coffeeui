@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+html {
+  background-color: #9BB7D4;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 1096px;
 }
 
-.App-link {
-  color: #61dafb;
+.page h1 {
+  font-size: 40pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page h2 {
+  align-self: flex-start;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.user {
+  background-color: white;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  padding: 25px;
+  max-width: 250px;
+}
+
+.user_name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.user_balance {
+  align-self: flex-end;
+}
+
+.deposit_form input[type=submit] {
+  font-size: large;
+  font-weight: bolder;
+  font-family: monospace;
+}
+
+.deposit_form input[type=number] {
+  width: 30%;
 }
